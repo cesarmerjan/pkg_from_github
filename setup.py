@@ -19,7 +19,7 @@ setup(
     keywords=["test"],
     license="MIT",
     include_package_data=True,
-    package_dir={"": "src"},
+    package_dir={"pkg_from_github": "src"},
     packages=["pkg_from_github"],
     classifiers=[],
     install_requires=["pandas"],

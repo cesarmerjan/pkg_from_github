@@ -6,7 +6,7 @@ BASEDIR = pathlib.Path(__file__).parent
 README = (BASEDIR / "README.md").read_text()
 
 setup(
-    name="Test Package",
+    name="pkg_from_github",
     python_requires=">3.9",
     version="0.1.2",
     description="Used to sign strings.",
@@ -20,7 +20,7 @@ setup(
     license="MIT",
     include_package_data=True,
     package_dir={"pkg_from_github": "src"},
-    packages=["pkg_from_github"],
+    packages=["dataframes"],
     classifiers=[],
     install_requires=["pandas"],
 )
